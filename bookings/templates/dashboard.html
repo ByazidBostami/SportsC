@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-4">Dashboard</h1>
+    <div class="row mt-5">
+        <!-- Total Booked -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>Total Booked</h4>
+                    <h2>{{ total_booked }}</h2>
+                    <p>Slots Booked</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Paid -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>Total Paid</h4>
+                    <h2>₹{{ total_paid }}</h2>
+                    <p>Payments Received</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Due -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>Total Due</h4>
+                    <h2>₹{{ total_due }}</h2>
+                    <p>Pending Payments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
